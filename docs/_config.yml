@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Western Governors University D479 - User Experience Design.
   Jason Adams. Create a tourism website for the island nation
   of Taniti.
-baseurl: "/docs" # the subpath of your site, e.g. /blog
+baseurl: "/d479" # the subpath of your site, e.g. /blog
 url: "https://jasonkradams.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: jasonkradams
 
