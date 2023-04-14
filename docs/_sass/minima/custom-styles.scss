@@ -1,0 +1,31 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+.mt-4 {
+    margin-top: 1rem
+}
+.mb-4 {
+    margin-bottom: 1rem
+}
+.flex {
+    display: flex
+}
+.w-64 {
+    width: 16rem
+}
+.flex-col {
+    flex-direction: column
+}
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243,244,246,var(--tw-bg-opacity))
+}
+.p-4 {
+    padding: 1rem
+}
+.px-2 {
+    padding-left: .5rem;
+    padding-right: .5rem
+}
+.font-bold {
+    font-weight: 700
+}

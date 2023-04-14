@@ -18,18 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: WGU 479 - User Experience Design
+title: Visit Taniti
 email: jada510@wgu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Western Governors University D479 - User Experience Design.
-  Jason Adams. Create a tourism website for the island nation
-  of Taniti.
+  Visit Taniti
 baseurl: "/d479" # the subpath of your site, e.g. /blog
 url: "https://jasonkradams.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: jasonkradams
 
 # Build settings
 theme: minima
+minima:
+  skin: auto
 plugins:
   - jekyll-feed
 
