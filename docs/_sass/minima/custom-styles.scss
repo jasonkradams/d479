@@ -9,23 +9,22 @@
 .flex {
     display: flex
 }
-.w-64 {
-    width: 16rem
-}
 .flex-col {
     flex-direction: column
-}
-.bg-gray-100 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(243,244,246,var(--tw-bg-opacity))
 }
 .p-4 {
     padding: 1rem
 }
 .px-2 {
-    padding-left: .5rem;
-    padding-right: .5rem
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-bottom: .75rem;
 }
 .font-bold {
     font-weight: 700
+}
+
+ul {
+    list-style-type: none;
+    align-items: baseline;
 }
