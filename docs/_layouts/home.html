@@ -9,53 +9,57 @@ layout: base
 
   {{ content }}
 
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taniti Island Tourism</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Taniti Island!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About the Island</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#lodging">Lodging</a></li>
+                <li><a href="#transportation">Transportation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About the Island</h2>
+            <p>Taniti Island is a tropical paradise located in the middle of the Pacific Ocean. With its beautiful beaches, lush rainforest, and active volcano, it is the perfect destination for nature lovers and adventure seekers.</p>
+        </section>
+        <section id="activities">
+            <h2>Activities</h2>
+            <p>There are plenty of things to do on Taniti Island! Visitors can enjoy the beaches, explore the rainforest, and visit the volcano. In addition, there are many other activities available, such as:</p>
+            <ul>
+                <li>Visiting a local history museum</li>
+                <li>Going on chartered fishing tours</li>
+                <li>Snorkeling</li>
+                <li>Zip-lining in the rainforest</li>
+                <li>Visiting several pubs, including a microbrewery</li>
+                <li>Dancing at a new dance club</li>
+                <li>Seeing a movie</li>
+                <li>Taking helicopter rides</li>
+                <li>Playing at an arcade</li>
+                <li>Visiting art galleries</li>
+                <li>Bowling</li>
+            </ul>
+            <p>Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay. A nine-hole golf course is also scheduled to open next year.</p>
+        </section>
+        <section id="lodging">
+            <h2>Lodging</h2>
+            <p>Taniti Island has a wide variety of lodging options to suit any budget or preference. There are inexpensive hostels, small family-owned hotels, bed and breakfasts, and even a large, four-star resort. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.</p>
+        </section>
+        <section id="transportation">
+            <h2>Transportation</h2>
+            <p>Almost all visitors arrive in Taniti Island by air, although some arrive on a small cruise ship that docks in Yellow Leaf Bay once a week. Taniti is served by a small airport that can accommodate small jets and propeller planes. The island is in the process of expanding the airport, so larger jets will be able to land in the future.</p>
+            <p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing, which is easy to explore on foot.</p>
+        </section>
+    </main>
 
 </div>
+</html>

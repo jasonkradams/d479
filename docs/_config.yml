@@ -33,6 +33,14 @@ minima:
 plugins:
   - jekyll-feed
 
+header_pages:
+  - lodging.md
+  - entertainment.md
+  - shopping.md
+  - sightseeing.md
+  - transportation.md
+  - faq.md
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
